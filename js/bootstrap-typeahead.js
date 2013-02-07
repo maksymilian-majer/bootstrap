@@ -237,12 +237,13 @@
         case 18: // alt
           break
 
-        case 9: // tab
         case 13: // enter
           if (!this.shown) return
           this.select()
           break
 
+		case 9: // tab
+		case 16: // shift, used in combination with tab (shift tab for reverse tabbing)
         case 27: // escape
           if (!this.shown) return
           this.hide()
